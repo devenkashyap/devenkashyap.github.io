@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deven Kashyap - Senior Program Manager | Agile Transformation Leader | Product Strategy Expert">
-    <title>Deven Kashyap | Senior Program Manager</title>
+    <meta name="description" content="Deven Kashyap - Senior Program Manager | Agile Transformation Leader | Future-Ready Leaders | AI & Automation Expert">
+    <meta name="keywords" content="Deven Kashyap, Program Manager, Agile Transformation, Scrum Master, AI Automation, Future-Ready Leaders">
+    <meta property="og:title" content="Deven Kashyap | Future-Ready Leaders">
+    <meta property="og:description" content="Senior Program Manager | Agile Transformation Leader | Process Architect">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devenkashyap.github.io/">
+    <title>Deven Kashyap | Future-Ready Leaders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,349 +21,357 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #E0E0E0;
+            background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
             min-height: 100vh;
+            overflow-x: hidden;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
         
+        /* Animated Background Effects */
+        .bg-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #00BCD4, transparent);
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, #A020F0, transparent);
+            top: 60%;
+            right: 10%;
+            animation-delay: 7s;
+        }
+        
+        .orb-3 {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, #FF00FF, transparent);
+            bottom: 10%;
+            left: 50%;
+            animation-delay: 14s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(50px, -50px) scale(1.1); }
+            66% { transform: translate(-50px, 50px) scale(0.9); }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Header / Hero Section */
         header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            border-radius: 25px;
+            box-shadow: 
+                0 8px 32px 0 rgba(0, 188, 212, 0.1),
+                0 0 80px 0 rgba(160, 32, 240, 0.1),
+                inset 0 0 60px rgba(255, 255, 255, 0.02);
+            margin-bottom: 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 188, 212, 0.05) 0%, transparent 70%);
+            animation: pulse 8s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+        }
+        
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 
+                0 0 40px rgba(0, 188, 212, 0.4),
+                0 0 80px rgba(160, 32, 240, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            animation: profileGlow 3s infinite alternate;
+            object-fit: cover;
+            background: linear-gradient(135deg, #1A1A2E, #0F3460);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            font-weight: 800;
+            color: #00BCD4;
+        }
+        
+        @keyframes profileGlow {
+            0% { box-shadow: 0 0 30px rgba(0, 188, 212, 0.4), 0 0 60px rgba(160, 32, 240, 0.2); }
+            100% { box-shadow: 0 0 50px rgba(0, 188, 212, 0.6), 0 0 100px rgba(255, 0, 255, 0.4); }
         }
         
         h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00BCD4, #A020F0, #FF00FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            text-shadow: 0 0 30px rgba(0, 188, 212, 0.3);
         }
         
         .subtitle {
-            color: #764ba2;
-            font-size: 1.3em;
+            font-size: 1.4em;
+            color: #00BCD4;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
         }
         
         .badges {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 30px;
         }
         
         .badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.2), rgba(160, 32, 240, 0.2));
+            border: 2px solid rgba(0, 188, 212, 0.4);
             color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
+            padding: 12px 30px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 500;
-            transition: transform 0.3s;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
         }
         
         .badge:hover {
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+            border-color: #00BCD4;
         }
         
-        .content {
-            background: rgba(255, 255, 255, 0.95);
+        .badge:hover::before {
+            left: 100%;
+        }
+        
+        /* Glass Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 20px;
             margin-bottom: 30px;
+            box-shadow: 
+                0 8px 32px 0 rgba(0, 188, 212, 0.05),
+                inset 0 0 40px rgba(255, 255, 255, 0.02);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 188, 212, 0.15);
+            border-color: rgba(0, 188, 212, 0.3);
         }
         
         h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #764ba2;
-            padding-bottom: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00BCD4, #FF00FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(160, 32, 240, 0.3);
+            position: relative;
         }
         
-        .about-grid {
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, #00BCD4, #FF00FF);
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .grid-4 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin: 30px 0;
         }
         
-        .about-item {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
+        .feature-box {
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.05), rgba(160, 32, 240, 0.05));
+            border-left: 4px solid #00BCD4;
+            padding: 25px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
-        .about-item h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(0, 188, 212, 0.1), transparent);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
         }
         
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
+        .feature-box:hover {
+            transform: translateX(5px);
+            border-left-color: #FF00FF;
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(160, 32, 240, 0.1));
+        }
+        
+        .feature-box h3 {
+            color: #00BCD4;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-box p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
         }
         
         .skill-category {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-top: 3px solid #667eea;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 3px solid #A020F0;
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-category:hover {
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateY(-3px);
         }
         
         .skill-category h3 {
-            color: #764ba2;
+            color: #A020F0;
+            font-size: 1.2em;
             margin-bottom: 15px;
-            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         
         .skill-tag {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 15px;
-            margin: 5px;
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.2), rgba(160, 32, 240, 0.2));
+            color: #00BCD4;
+            padding: 8px 16px;
+            border-radius: 20px;
             font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid rgba(0, 188, 212, 0.3);
+            transition: all 0.3s ease;
         }
         
-        .timeline {
-            position: relative;
-            padding: 20px 0;
+        .skill-tag:hover {
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.3), rgba(160, 32, 240, 0.3));
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
         }
         
         .timeline-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border-left: 4px solid #764ba2;
-        }
-        
-        .timeline-item h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .timeline-date {
-            color: #764ba2;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .certifications {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        
-        .cert-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            font-weight: 500;
-            text-align: center;
-            flex: 1;
-            min-width: 200px;
-        }
-        
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .contact-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-        
-        .contact-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-card h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            color: #764ba2;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            
-            .subtitle {
-                font-size: 1.1em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Deven Kashyap</h1>
-            <p class="subtitle">Senior Program Manager | Agile Transformation Leader | AI & Automation Enthusiast</p>
-            <div class="badges">
-                <a href="https://www.linkedin.com/in/devenkashyap/" class="badge" target="_blank">LinkedIn</a>
-                <a href="mailto:devenkashyap85@gmail.com" class="badge">Email</a>
-                <a href="https://github.com/devenkashyap" class="badge" target="_blank">GitHub</a>
-            </div>
-        </header>
-
-        <div class="content">
-            <h2>About Me</h2>
-            <p style="font-size: 1.1em; margin-bottom: 20px;">
-                Seasoned Program Manager with extensive experience in driving large-scale digital transformations, 
-                leading cross-functional teams, and implementing Agile methodologies across enterprise environments. 
-                Passionate about leveraging AI and automation to optimize processes and deliver exceptional business outcomes.
-            </p>
-            
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>🎯 Strategic Leadership</h3>
-                    <p>Expert in program governance, stakeholder management, and strategic planning for complex enterprise initiatives.</p>
-                </div>
-                <div class="about-item">
-                    <h3>🚀 Agile Excellence</h3>
-                    <p>Certified Scrum Master with proven track record in Agile transformations, SAFe implementation, and team coaching.</p>
-                </div>
-                <div class="about-item">
-                    <h3>🤖 AI & Automation</h3>
-                    <p>Pioneering the integration of AI-powered tools and automation solutions to enhance productivity and innovation.</p>
-                </div>
-                <div class="about-item">
-                    <h3>📊 Data-Driven Decisions</h3>
-                    <p>Leveraging advanced analytics, Power BI, and business intelligence to drive informed decision-making.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>Core Competencies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Program Management</h3>
-                    <span class="skill-tag">Roadmap Planning</span>
-                    <span class="skill-tag">Risk Management</span>
-                    <span class="skill-tag">Budget Oversight</span>
-                    <span class="skill-tag">Stakeholder Engagement</span>
-                </div>
-                <div class="skill-category">
-                    <h3>Agile & Methodologies</h3>
-                    <span class="skill-tag">Scrum</span>
-                    <span class="skill-tag">SAFe</span>
-                    <span class="skill-tag">Kanban</span>
-                    <span class="skill-tag">Lean</span>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <span class="skill-tag">Jira</span>
-                    <span class="skill-tag">Azure DevOps</span>
-                    <span class="skill-tag">Power BI</span>
-                    <span class="skill-tag">MS Project</span>
-                </div>
-                <div class="skill-category">
-                    <h3>AI & Automation</h3>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Power Automate</span>
-                    <span class="skill-tag">AI Integration</span>
-                    <span class="skill-tag">Process Optimization</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>Professional Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - Present</div>
-                    <h3>Senior Program Manager</h3>
-                    <p>Leading enterprise-wide Agile transformation initiatives, managing portfolios of strategic programs, and driving adoption of AI-powered automation solutions across the organization.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2020 - 2023</div>
-                    <h3>Program Manager</h3>
-                    <p>Successfully delivered multiple high-impact projects, implemented Scrum frameworks, and established PMO best practices that improved delivery efficiency by 40%.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2017 - 2020</div>
-                    <h3>Project Manager / Scrum Master</h3>
-                    <p>Facilitated Agile ceremonies, coached development teams, and managed end-to-end project delivery for digital transformation initiatives.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>Certifications & Training</h2>
-            <div class="certifications">
-                <div class="cert-badge">Certified Scrum Master (CSM®)</div>
-                <div class="cert-badge">SAFe Program Consultant (SPC)</div>
-                <div class="cert-badge">PMP® Training</div>
-                <div class="cert-badge">Agile Leadership</div>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>Let's Connect</h2>
-            <p style="font-size: 1.1em; margin-bottom: 30px;">
-                I'm always open to discussing new opportunities, collaborations, or just connecting with fellow professionals in the program management and Agile community.
-            </p>
-            <div class="contact-grid">
-                <a href="https://www.linkedin.com/in/devenkashyap/" class="contact-card" target="_blank">
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me professionally</p>
-                </a>
-                <a href="mailto:devenkashyap85@gmail.com" class="contact-card">
-                    <h3>Email</h3>
-                    <p>devenkashyap85@gmail.com</p>
-                </a>
-                <a href="https://github.com/devenkashyap" class="contact-card" target="_blank">
-                    <h3>GitHub</h3>
-                    <p>View my projects & contributions</p>
-                </a>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Deven Kashyap. All rights reserved.</p>
-            <p style="margin-top: 10px;">Built with passion for excellence and innovation</p>
-        </footer>
-    </div>
-</body>
-</html>
+            background: rgba(255, 255, 255,
